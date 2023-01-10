@@ -13,93 +13,110 @@ class RootScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Consumer<RootScreenViewModel>(
-      builder: (context, model, child) => WillPopScope(
-        onWillPop: () async {
-          final status = await Get.dialog(AlertDialog(
-            title: const Text('Caution!'),
-            content: const Text('Do you really want to close the application?'),
-            actions: [
-              ElevatedButton(
-                onPressed: () {
-                  Get.back(result: true);
-                },
-                child: const Text('Yes'),
-              ),
-              ElevatedButton(
-                onPressed: () {
-                  Get.back(result: false);
-                },
-                child: const Text('No'),
-              ),
-            ],
-          ));
+    return ChangeNotifierProvider(
+      create: (context) => RootScreenViewModel(),
+      child: Consumer<RootScreenViewModel>(
+        builder: (context, model, child) => WillPopScope(
+          onWillPop: () async {
+            final status = await Get.dialog(AlertDialog(
+              title: const Text('Caution!'),
+              content:
+                  const Text('Do you really want to close the application?'),
+              actions: [
+                ElevatedButton(
+                  onPressed: () {
+                    Get.back(result: true);
+                  },
+                  child: const Text('Yes'),
+                ),
+                ElevatedButton(
+                  onPressed: () {
+                    Get.back(result: false);
+                  },
+                  child: const Text('No'),
+                ),
+              ],
+            ));
 
-          /// In case user has chosen not to be kept logged in,
-          /// he will get logged out of the app on exit.
-          // if (status && !locator<AuthService>().isRememberMe) {
-          //   await locator<AuthService>().logout();
-          // }
-          return status;
-        },
-        child: Scaffold(
-          extendBody: true,
-          body: model.allScreen[model.selectedScreen],
+            /// In case user has chosen not to be kept logged in,
+            /// he will get logged out of the app on exit.
+            // if (status && !locator<AuthService>().isRememberMe) {
+            //   await locator<AuthService>().logout();
+            // }
+            return status;
+          },
+          child: Scaffold(
+              extendBody: true,
+              body: model.allScreen[model.selectedScreen],
+              bottomNavigationBar:
+                  // model.isEnableBottomBar
+                  //     ?
+                  FABBottomAppBar(
+                color: Colors.white,
+                backgroundColor: Colors.white,
+                selectedColor: kprimaryColor,
 
-          bottomNavigationBar: model.isEnableBottomBar
-              ? FABBottomAppBar(
-                  color: Colors.grey,
-                  backgroundColor: Colors.grey,
-                  selectedColor: primaryColor,
-                  notchedShape: const CircularNotchedRectangle(),
-                  onTabSelected: model.updatedScreenIndex,
-                  items: [
-                    FABBottomAppBarItem(
+                // notchedShape: const CircularNotchedRectangle(),
+                onTabSelected: model.updatedScreenIndex,
+                items: [
+                  FABBottomAppBarItem(
+                    icon: ImageContainer(
+                      height: 20.h,
+                      width: 20.h,
+                      assets: model.selectedScreen == 0
+                          ? "Assets/Images/home_selected_icon.png"
+                          : "Assets/Images/home_unselected_icon.png",
+                      fit: BoxFit.contain,
+                    ),
+                    text: "Home",
+                  ),
+                  FABBottomAppBarItem(
                       icon: ImageContainer(
-                        height: 30.h,
-                        width: 30.h,
-                        assets: "${staticAssetsPath}bottom_home_icon.png",
+                        height: 20.h,
+                        width: 20.h,
+                        assets: model.selectedScreen == 1
+                            ? "${staticAssetsPath}booking_selected_icon.png"
+                            : "${staticAssetsPath}booking_unselected_icon.png",
                         fit: BoxFit.contain,
                       ),
-                    ),
-                    FABBottomAppBarItem(
+                      text: "Booking"),
+                  FABBottomAppBarItem(
                       icon: ImageContainer(
-                        height: 30.h,
-                        width: 30.h,
-                        assets: "${staticAssetsPath}bottom_card_icon.png",
+                        height: 20.h,
+                        width: 20.h,
+                        assets: model.selectedScreen == 2
+                            ? "${staticAssetsPath}chat_selected_icon.png"
+                            : "${staticAssetsPath}chat_unselected_icon.png",
                         fit: BoxFit.contain,
                       ),
+                      text: "Chat"),
+                  FABBottomAppBarItem(
+                    icon: ImageContainer(
+                      height: 20.h,
+                      width: 20.h,
+                      assets: model.selectedScreen == 3
+                          ? "${staticAssetsPath}notification_selected_icon.png"
+                          : "${staticAssetsPath}notification_unselected_icon.png",
+                      fit: BoxFit.contain,
                     ),
-                    FABBottomAppBarItem(
-                      icon: ImageContainer(
-                        height: 30.h,
-                        width: 30.h,
-                        assets: "${staticAssetsPath}bottom_category_icon.png",
-                        fit: BoxFit.contain,
-                      ),
-                    ),
-                    FABBottomAppBarItem(
-                      icon: ImageContainer(
-                        height: 30.h,
-                        width: 30.h,
-                        assets: "${staticAssetsPath}bottom_profile_icon.png",
-                        fit: BoxFit.contain,
-                      ),
-                    ),
-                  ],
-                )
-              : Container(),
+                    text: "Notification",
+                  ),
+                ],
+              )
+
+              // : Container(),
 //      body: _list[_page],
-          floatingActionButtonLocation:
-              FloatingActionButtonLocation.centerDocked,
-          floatingActionButton: model.isEnableBottomBar
-              ? FloatingActionButton(
-                  backgroundColor: otherColor,
-                  onPressed: () {},
-                  child: const Icon(Icons.add),
-                  elevation: 2.0,
-                )
-              : Container(),
+              // floatingActionButtonLocation:
+              //     FloatingActionButtonLocation.centerDocked,
+              // floatingActionButton: model.isEnableBottomBar
+              //     ? FloatingActionButton(
+              //         backgroundColor: otherColor,
+              //         onPressed: () {},
+              //         child: const Icon(Icons.add),
+              //         elevation: 2.0,
+              //       )
+              //     : Container(),
+              ),
         ),
       ),
     );

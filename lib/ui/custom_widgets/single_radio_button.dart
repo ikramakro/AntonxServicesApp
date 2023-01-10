@@ -27,7 +27,7 @@ class CustomSingleRadioButton extends StatelessWidget {
             width: 10,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(50),
-                color: isSelected ? primaryColor : Colors.transparent),
+                color: isSelected ? kprimaryColor : Colors.transparent),
           ),
         ),
       ),
