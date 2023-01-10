@@ -8,7 +8,7 @@ import 'package:flutter_antonx_boilerplate/ui/screens/home_screens/home_screen.d
 class RootScreenViewModel extends BaseViewModel {
   List<Widget> allScreen = [
   
-    SignUpScreen(),
+    HomeScreen(),
     LoginScreen(),
     SignUpScreen(),
     LoginScreen()

@@ -38,6 +38,10 @@ dependencies:
   shimmer: ^2.0.0
   url_launcher: ^6.0.7
   firebase_core_platform_interface: ^4.5.2
+  syncfusion_flutter_sliders: ^20.3.61
+  cloud_firestore: ^4.2.0
+  smooth_page_indicator: ^1.0.0+2
+  firebase_auth: ^4.2.4
 
 dev_dependencies:
   flutter_test:
@@ -55,10 +59,10 @@ flutter:
   #   - images/a_dot_ham.jpeg
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: Assets\Fonts\Poppins\Poppins-Regular.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro

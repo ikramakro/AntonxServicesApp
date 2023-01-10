@@ -47,31 +47,33 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyBvxJIG7bbmRt_5lPZTsqTm9laTXwh8fww',
-    appId: '1:816831984722:web:a4a3dfec5f753b5c749b8b',
-    messagingSenderId: '816831984722',
-    projectId: 'antonx-flutter-template',
-    authDomain: 'antonx-flutter-template.firebaseapp.com',
-    storageBucket: 'antonx-flutter-template.appspot.com',
-    measurementId: 'G-HYLR3KGRNY',
+    apiKey: 'AIzaSyCs_rw9hEIKH6y1-O0kpyt6Y8lExMoqWXA',
+    appId: '1:110609193261:web:501ac5f82f1ae89fab1ba4',
+    messagingSenderId: '110609193261',
+    projectId: 'service-app-b4ff2',
+    authDomain: 'service-app-b4ff2.firebaseapp.com',
+    databaseURL: 'https://service-app-b4ff2-default-rtdb.firebaseio.com',
+    storageBucket: 'service-app-b4ff2.appspot.com',
+    measurementId: 'G-LYQM9EVCVK',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyDrPWQANyOoeEQeRFMT-FriKU2l3pxwfpA',
-    appId: '1:816831984722:android:10aa607d8f7f89b4749b8b',
-    messagingSenderId: '816831984722',
-    projectId: 'antonx-flutter-template',
-    storageBucket: 'antonx-flutter-template.appspot.com',
+    apiKey: 'AIzaSyCdwJ4RGCJGFinpc4lg3EgOY9zTwLLETWc',
+    appId: '1:110609193261:android:5ef0de8bb5832155ab1ba4',
+    messagingSenderId: '110609193261',
+    projectId: 'service-app-b4ff2',
+    databaseURL: 'https://service-app-b4ff2-default-rtdb.firebaseio.com',
+    storageBucket: 'service-app-b4ff2.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyCtKOS2h9xkrqi_2cZionSLCqvAhYc-Yss',
-    appId: '1:816831984722:ios:5a00c0695b237284749b8b',
-    messagingSenderId: '816831984722',
-    projectId: 'antonx-flutter-template',
-    storageBucket: 'antonx-flutter-template.appspot.com',
-    iosClientId:
-        '816831984722-rnmhv8pt2rrq4b3tpi1i6o72rddqo074.apps.googleusercontent.com',
+    apiKey: 'AIzaSyD7G3ICxxRwo8m82VG_NRFnb3qPw9w2TzE',
+    appId: '1:110609193261:ios:d6bf808315e0c54fab1ba4',
+    messagingSenderId: '110609193261',
+    projectId: 'service-app-b4ff2',
+    databaseURL: 'https://service-app-b4ff2-default-rtdb.firebaseio.com',
+    storageBucket: 'service-app-b4ff2.appspot.com',
+    iosClientId: '110609193261-1qno5vafq3tpjl7te3diegujforrqsd7.apps.googleusercontent.com',
     iosBundleId: 'com.example.flutterAntonxBoilerplate',
   );
 }
