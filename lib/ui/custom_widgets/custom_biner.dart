@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_antonx_boilerplate/core/constants/colors.dart';
+import 'package:flutter_antonx_boilerplate/core/constants/styles.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CustomBiner extends StatelessWidget {
@@ -20,10 +21,7 @@ class CustomBiner extends StatelessWidget {
             top: 36,
             child: Text(
               'Full Pack',
-              style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 16.sp,
-                  fontWeight: FontWeight.bold),
+              style: kHead9,
             ),
           ),
           Positioned(
@@ -31,10 +29,7 @@ class CustomBiner extends StatelessWidget {
             top: 56,
             child: Text(
               '50% OFF',
-              style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 24.sp,
-                  fontWeight: FontWeight.bold),
+              style: kHead,
             ),
           ),
           Positioned(
@@ -46,14 +41,13 @@ class CustomBiner extends StatelessWidget {
               padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 11.h),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(14),
-                color: const Color(0xffF4F3FD),
+                color: kwhitecolor,
               ),
               child: Center(
-                  child: Text('Book Now',
-                      style: TextStyle(
-                          color: kbtnTxtColor,
-                          fontSize: 10.sp,
-                          fontWeight: FontWeight.bold))),
+                  child: Text(
+                'Book Now',
+                style: kHead10,
+              )),
             ),
           ),
         ],

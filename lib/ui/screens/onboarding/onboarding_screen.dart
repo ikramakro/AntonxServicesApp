@@ -1,7 +1,5 @@
 // ignore_for_file: library_private_types_in_public_api
 
-import 'dart:math';
-
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_antonx_boilerplate/core/constants/colors.dart';
@@ -50,7 +48,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
       child: Consumer<OnboardingViewModel>(
         builder: (context, model, child) => SafeArea(
           child: Scaffold(
-            backgroundColor: Colors.white,
+            backgroundColor: kwhitecolor,
             body: Padding(
               padding: const EdgeInsets.only(top: 100),
               child: Column(
@@ -136,7 +134,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                                             color:
                                                 index == model.currentPageIndex
                                                     ? ksecondaryColor
-                                                    : const Color(0xffEAEAFF),
+                                                    : kwhitecolor,
                                             borderRadius:
                                                 BorderRadius.circular(20)),
                                       ),

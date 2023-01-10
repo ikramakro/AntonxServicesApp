@@ -73,7 +73,8 @@ class DefaultFirebaseOptions {
     projectId: 'service-app-b4ff2',
     databaseURL: 'https://service-app-b4ff2-default-rtdb.firebaseio.com',
     storageBucket: 'service-app-b4ff2.appspot.com',
-    iosClientId: '110609193261-1qno5vafq3tpjl7te3diegujforrqsd7.apps.googleusercontent.com',
+    iosClientId:
+        '110609193261-1qno5vafq3tpjl7te3diegujforrqsd7.apps.googleusercontent.com',
     iosBundleId: 'com.example.flutterAntonxBoilerplate',
   );
 }

@@ -9,11 +9,17 @@ final kHead = TextStyle(
     fontSize: 24.sp,
     fontWeight: FontWeight.w600,
     fontFamily: 'Poppins');
-final kHead11 =
-    TextStyle(color: Colors.white, fontSize: 16.sp, fontFamily: 'Poppins');
+final kHead11 = TextStyle(
+  color: Colors.white,
+  fontSize: 16.sp,
+  fontFamily: 'Poppins',
+);
 
 final kHead1 = TextStyle(
-    fontWeight: FontWeight.bold, fontSize: 28.sp, fontFamily: 'Poppins');
+  fontWeight: FontWeight.bold,
+  fontSize: 28.sp,
+  fontFamily: 'Poppins',
+);
 const smallTax = TextStyle(
     letterSpacing: sqrt1_2,
     wordSpacing: sqrt1_2,
@@ -40,3 +46,25 @@ final kHead5 = TextStyle(
     color: Colors.white,
     fontSize: ScreenUtil().setSp(16),
     fontFamily: 'Poppins');
+final kHead6 = TextStyle(
+    color: Colors.black,
+    fontSize: 18.sp,
+    fontWeight: FontWeight.w600,
+    fontFamily: 'Poppins');
+
+final kHead7 = TextStyle(
+  fontSize: 20.sp,
+  fontWeight: FontWeight.bold,
+);
+final kHead8 = TextStyle(
+  fontSize: 14.sp,
+  fontWeight: FontWeight.bold,
+);
+final kHead9 = TextStyle(
+  color: Colors.white,
+  fontSize: 16.sp,
+  fontWeight: FontWeight.bold,
+  fontFamily: 'Poppins',
+);
+final kHead10 = TextStyle(
+    color: kbtnTxtColor, fontSize: 10.sp, fontWeight: FontWeight.bold);

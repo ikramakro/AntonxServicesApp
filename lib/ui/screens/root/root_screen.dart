@@ -52,8 +52,8 @@ class RootScreen extends StatelessWidget {
                   // model.isEnableBottomBar
                   //     ?
                   FABBottomAppBar(
-                color: Colors.white,
-                backgroundColor: Colors.white,
+                color: kwhitecolor,
+                backgroundColor: kwhitecolor,
                 selectedColor: kprimaryColor,
 
                 // notchedShape: const CircularNotchedRectangle(),
@@ -62,7 +62,7 @@ class RootScreen extends StatelessWidget {
                   FABBottomAppBarItem(
                     icon: ImageContainer(
                       height: 20.h,
-                      width: 20.h,
+                      width: 20.w,
                       assets: model.selectedScreen == 0
                           ? "Assets/Images/home_selected_icon.png"
                           : "Assets/Images/home_unselected_icon.png",
@@ -73,7 +73,7 @@ class RootScreen extends StatelessWidget {
                   FABBottomAppBarItem(
                       icon: ImageContainer(
                         height: 20.h,
-                        width: 20.h,
+                        width: 20.w,
                         assets: model.selectedScreen == 1
                             ? "${staticAssetsPath}booking_selected_icon.png"
                             : "${staticAssetsPath}booking_unselected_icon.png",
@@ -83,7 +83,7 @@ class RootScreen extends StatelessWidget {
                   FABBottomAppBarItem(
                       icon: ImageContainer(
                         height: 20.h,
-                        width: 20.h,
+                        width: 20.w,
                         assets: model.selectedScreen == 2
                             ? "${staticAssetsPath}chat_selected_icon.png"
                             : "${staticAssetsPath}chat_unselected_icon.png",
@@ -93,7 +93,7 @@ class RootScreen extends StatelessWidget {
                   FABBottomAppBarItem(
                     icon: ImageContainer(
                       height: 20.h,
-                      width: 20.h,
+                      width: 20.w,
                       assets: model.selectedScreen == 3
                           ? "${staticAssetsPath}notification_selected_icon.png"
                           : "${staticAssetsPath}notification_unselected_icon.png",

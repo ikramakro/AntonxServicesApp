@@ -21,3 +21,5 @@ const Color kdarkbluecolor = Color(0xFF46369F);
 const Color klightbluecolor1 = Color(0xFF6E6BE8);
 const Color kyellowcolor = Color(0xFFffb457);
 const Color klightskybluecolor = Color(0xFFECFCFF);
+final Color klightgreycolor = const Color(0xFF686868).withOpacity(0.4);
+const Color ktransparent = Colors.transparent;

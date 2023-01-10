@@ -1,3 +1,5 @@
+// ignore_for_file: depend_on_referenced_packages
+
 import 'dart:io';
 import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
@@ -31,8 +33,8 @@ class FilePickerService {
 
   pickImageWithoutCompression() async {
     File? selectedImage;
-    final _filePicker = FilePicker.platform;
-    FilePickerResult? result = await _filePicker.pickFiles(
+    final filePicker = FilePicker.platform;
+    FilePickerResult? result = await filePicker.pickFiles(
       type: FileType.image,
       allowMultiple: false,
     );

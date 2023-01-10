@@ -12,7 +12,6 @@ import 'package:flutter_antonx_boilerplate/ui/custom_widgets/rounded_container.d
 
 import 'package:flutter_antonx_boilerplate/ui/screens/home_screens/home_screen_view_model.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:get/get.dart';
 import 'package:provider/provider.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
@@ -142,7 +141,7 @@ class HomeScreen extends StatelessWidget {
               padding: const EdgeInsets.symmetric(vertical: 25),
               child: Text(
                 'Top pick',
-                style: kHead5,
+                style: kHead6,
               ),
             ),
             Row(
@@ -165,8 +164,7 @@ class HomeScreen extends StatelessWidget {
                         ),
                         Text(
                           'Full house Cleaning',
-                          style: TextStyle(
-                              fontSize: 20.sp, fontWeight: FontWeight.bold),
+                          style: kHead7,
                         ),
                       ],
                     ),
@@ -179,7 +177,7 @@ class HomeScreen extends StatelessWidget {
                       RoundedContainer(
                         height: 127.h,
                         width: 145.w,
-                        color: const Color(0xffECFCFF),
+                        color: kwhitecolor,
                         child: Padding(
                           padding: const EdgeInsets.symmetric(
                               vertical: 20, horizontal: 35),
@@ -189,12 +187,7 @@ class HomeScreen extends StatelessWidget {
                               SizedBox(
                                 height: 11.h,
                               ),
-                              Text(
-                                'Plumbing',
-                                style: TextStyle(
-                                    fontSize: 14.sp,
-                                    fontWeight: FontWeight.bold),
-                              ),
+                              Text('Plumbing', style: kHead8),
                             ],
                           ),
                         ),
@@ -217,9 +210,7 @@ class HomeScreen extends StatelessWidget {
                               ),
                               Text(
                                 'Cooking',
-                                style: TextStyle(
-                                    fontSize: 14.sp,
-                                    fontWeight: FontWeight.bold),
+                                style: kHead8,
                               ),
                             ],
                           ),
@@ -259,7 +250,7 @@ class HomeScreen extends StatelessWidget {
             ),
             Text(
               'Explore',
-              style: TextStyle(fontSize: 18.sp, fontWeight: FontWeight.bold),
+              style: kHead6,
             ),
             SizedBox(
               height: 130.h,
@@ -279,11 +270,7 @@ class HomeScreen extends StatelessWidget {
                           SizedBox(
                             height: 11.h,
                           ),
-                          Text(
-                            'Bathroom Cleaning',
-                            style: TextStyle(
-                                fontSize: 14.sp, fontWeight: FontWeight.bold),
-                          ),
+                          Text('Bathroom Cleaning', style: kHead8),
                         ],
                       ),
                     ),
@@ -305,8 +292,7 @@ class HomeScreen extends StatelessWidget {
                           ),
                           Text(
                             'Groceries Shopping',
-                            style: TextStyle(
-                                fontSize: 14.sp, fontWeight: FontWeight.bold),
+                            style: kHead8,
                           ),
                         ],
                       ),
@@ -329,8 +315,7 @@ class HomeScreen extends StatelessWidget {
                           ),
                           Text(
                             'Sofa Wash',
-                            style: TextStyle(
-                                fontSize: 14.sp, fontWeight: FontWeight.bold),
+                            style: kHead8,
                           ),
                         ],
                       ),
@@ -347,8 +332,7 @@ class HomeScreen extends StatelessWidget {
               width: 120.w,
               padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 11.h),
               decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(14),
-                  color: const Color(0xffF4F3FD)),
+                  borderRadius: BorderRadius.circular(14), color: kwhitecolor),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -357,11 +341,10 @@ class HomeScreen extends StatelessWidget {
                     color: kprimaryColor,
                     size: 20,
                   ),
-                  Text(" Need more service?",
-                      style: TextStyle(
-                          color: kprimaryColor,
-                          fontSize: ScreenUtil().setSp(16),
-                          fontWeight: FontWeight.bold)),
+                  Text(
+                    " Need more service?",
+                    style: kHead4,
+                  ),
                 ],
               ),
             ),

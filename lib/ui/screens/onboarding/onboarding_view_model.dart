@@ -5,7 +5,6 @@ import 'package:flutter_antonx_boilerplate/core/services/local_storage_service.d
 import 'package:flutter_antonx_boilerplate/locator.dart';
 import 'package:logger/logger.dart';
 
-
 class OnboardingViewModel extends BaseViewModel {
   final Logger log = Logger();
   late int currentPageIndex;

@@ -1,6 +1,8 @@
 // ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
+import 'package:flutter_antonx_boilerplate/core/constants/colors.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 // ignore: must_be_immutable
 class RoundedContainer extends StatelessWidget {
@@ -30,10 +32,10 @@ class RoundedContainer extends StatelessWidget {
         decoration: BoxDecoration(
             color: color,
             borderRadius: BorderRadius.only(
-                bottomLeft: Radius.circular(radus ?? 20),
-                bottomRight: Radius.circular(radus ?? 20),
-                topRight: Radius.circular(radus ?? 20)),
-            border: Border.all(color: const Color(0xffEAEAFF))),
+                bottomLeft: Radius.circular(radus ?? 20.r),
+                bottomRight: Radius.circular(radus ?? 20.r),
+                topRight: Radius.circular(radus ?? 20.r)),
+            border: Border.all(color: kwhitecolor)),
         child: child,
       ),
     );

@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_antonx_boilerplate/core/constants/colors.dart';
 import 'package:flutter_antonx_boilerplate/ui/custom_widgets/image_container.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -12,7 +13,7 @@ class CustomAppBar extends StatelessWidget {
       height: 237.h,
       width: double.infinity,
       decoration: BoxDecoration(
-          color: const Color(0xff6E6BE8),
+          color: kprimaryColor,
           borderRadius: BorderRadius.only(
               bottomLeft: Radius.circular(45.r),
               bottomRight: Radius.circular(45.r))),
