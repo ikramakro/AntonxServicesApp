@@ -4,6 +4,7 @@ import 'package:flutter_antonx_boilerplate/core/constants/styles.dart';
 import 'package:flutter_antonx_boilerplate/ui/custom_widgets/custom_button.dart';
 import 'package:flutter_antonx_boilerplate/ui/custom_widgets/custom_row.dart';
 import 'package:flutter_antonx_boilerplate/ui/custom_widgets/rounded_container.dart';
+import 'package:flutter_antonx_boilerplate/ui/screens/Review%20Screen/asking_for_review_screen.dart';
 import 'package:flutter_antonx_boilerplate/ui/screens/booking_screen/booking_againScreen.dart';
 import 'package:flutter_antonx_boilerplate/ui/screens/booking_screen/completed_screen.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -119,7 +120,7 @@ class CancelledScreen extends StatelessWidget {
                         CustomButton(
                           color: kgreycolor,
                           ontap: () {
-                            // Get.to(const AskingForReviewScreen());
+                            Get.to(const AskingForReviewScreen());
                           },
                           height: 46.h,
                           width: 127.w,
