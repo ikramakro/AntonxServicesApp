@@ -35,7 +35,7 @@ class RoundedContainer extends StatelessWidget {
                 bottomLeft: Radius.circular(radus ?? 20.r),
                 bottomRight: Radius.circular(radus ?? 20.r),
                 topRight: Radius.circular(radus ?? 20.r)),
-            border: Border.all(color: kwhitecolor)),
+            border: Border.all(color: kbordercolor)),
         child: child,
       ),
     );

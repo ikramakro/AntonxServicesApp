@@ -25,6 +25,7 @@ class HomeScreen extends StatelessWidget {
       child: Consumer<HomeScreenViewModal>(
         builder: (context, modal, child) {
           return Scaffold(
+            backgroundColor: kwhitecolor,
             body: Column(
               children: [
                 customAppBar(modal),

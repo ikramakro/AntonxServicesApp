@@ -23,3 +23,4 @@ const Color kyellowcolor = Color(0xFFffb457);
 const Color klightskybluecolor = Color(0xFFECFCFF);
 final Color klightgreycolor = const Color(0xFF686868).withOpacity(0.4);
 const Color ktransparent = Colors.transparent;
+const Color kbordercolor = Color(0xffEAEAFF);

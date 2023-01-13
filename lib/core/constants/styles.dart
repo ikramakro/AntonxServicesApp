@@ -67,4 +67,42 @@ final kHead9 = TextStyle(
   fontFamily: 'Poppins',
 );
 final kHead10 = TextStyle(
-    color: kbtnTxtColor, fontSize: 10.sp, fontWeight: FontWeight.bold);
+  color: kbtnTxtColor,
+  fontSize: 10.sp,
+  fontWeight: FontWeight.bold,
+);
+final kHead12 = TextStyle(
+  color: kprimaryColor,
+  fontSize: 14.sp,
+  fontWeight: FontWeight.w900,
+);
+
+const kHead13 = TextStyle(
+  color: ksecondaryColor,
+);
+final khead14 = TextStyle(
+  color: kblackcolor,
+  fontSize: 14.sp,
+  fontWeight: FontWeight.w600,
+);
+final khead15 = TextStyle(
+  color: kblackcolor2,
+  fontSize: 14.sp,
+  fontWeight: FontWeight.normal,
+);
+final kHead16 = TextStyle(
+  fontSize: 18.sp,
+  fontWeight: FontWeight.bold,
+  fontFamily: 'Poppins-ExtraLight',
+);
+final kHead17 = TextStyle(
+  fontSize: 18.sp,
+  fontWeight: FontWeight.w900,
+);
+const kHead18 = TextStyle(
+  color: ksecondaryColor,
+  fontWeight: FontWeight.bold,
+);
+const kHead19 = TextStyle(
+  fontWeight: FontWeight.bold,
+);
