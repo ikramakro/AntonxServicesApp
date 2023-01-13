@@ -4,8 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_antonx_boilerplate/core/constants/colors.dart';
 import 'package:flutter_antonx_boilerplate/core/constants/styles.dart';
 import 'package:flutter_antonx_boilerplate/ui/custom_widgets/custom_button.dart';
-
-import 'package:flutter_antonx_boilerplate/ui/custom_widgets/rounded_Container.dart';
+import 'package:flutter_antonx_boilerplate/ui/custom_widgets/rounded_container.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class ActiveTab extends StatefulWidget {
