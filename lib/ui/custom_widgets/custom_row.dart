@@ -30,8 +30,7 @@ class CustomRow extends StatelessWidget {
         SizedBox(
           width: 100.w,
         ),
-        Text(text,
-            style:kHead6),
+        Text(text, style: kHead6),
       ],
     );
   }

@@ -8,7 +8,6 @@ import 'package:flutter_antonx_boilerplate/core/constants/styles.dart';
 import 'package:flutter_antonx_boilerplate/ui/custom_widgets/custom_button.dart';
 
 import 'package:flutter_antonx_boilerplate/ui/custom_widgets/custom_row.dart';
-import 'package:flutter_antonx_boilerplate/ui/custom_widgets/custom_text.dart';
 import 'package:flutter_antonx_boilerplate/ui/custom_widgets/rounded_Container.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';

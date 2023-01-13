@@ -77,7 +77,7 @@ class _CancelledTabState extends State<CancelledTab> {
                             },
                             height: 50.h,
                             width: 280.w,
-                            child:  Center(
+                            child: Center(
                                 child: Text(
                               'View',
                               style: kHead4,
