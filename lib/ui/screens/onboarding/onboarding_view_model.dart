@@ -1,9 +1,9 @@
 import 'package:carousel_slider/carousel_controller.dart';
 import 'package:flutter_antonx_boilerplate/core/models/other_models/onboarding.dart';
+import 'package:flutter_antonx_boilerplate/core/others/base_view_model.dart';
 import 'package:flutter_antonx_boilerplate/core/services/local_storage_service.dart';
+import 'package:flutter_antonx_boilerplate/locator.dart';
 import 'package:logger/logger.dart';
-import '../../../core/others/base_view_model.dart';
-import '../../../locator.dart';
 
 class OnboardingViewModel extends BaseViewModel {
   final Logger log = Logger();

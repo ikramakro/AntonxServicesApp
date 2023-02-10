@@ -4,8 +4,9 @@ import 'package:flutter_antonx_boilerplate/core/services/localization_service.da
 class Onboarding {
   late String? imgUrl;
   late String? title;
+  late String? description;
 
-  Onboarding(this.imgUrl, this.title);
+  Onboarding(this.imgUrl, this.title, this.description);
 
   Onboarding.fromJson(json) {
     debugPrint('$json');

@@ -17,7 +17,7 @@ class ForgetPasswordScreen extends StatelessWidget {
           inAsyncCall: model.state == ViewState.busy,
           child: const SafeArea(
             child: Scaffold(
-              backgroundColor: scaffoldBackgroundColor,
+              backgroundColor: kscaffoldBackgroundColor,
 //               body: Stack(
 //                 children: [
 //                   Padding(

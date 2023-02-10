@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_typing_uninitialized_variables
 
 import 'package:flutter/material.dart';
+import 'package:flutter_antonx_boilerplate/core/constants/colors.dart';
 
 class CustomTextField extends StatelessWidget {
   final controller;
@@ -52,7 +53,7 @@ class CustomTextField extends StatelessWidget {
             }
           },
       decoration: InputDecoration(
-        fillColor: Colors.white,
+        fillColor: kwhitecolor,
         filled: true,
         prefixIconConstraints: const BoxConstraints(),
         prefixIcon: Padding(
@@ -68,24 +69,18 @@ class CustomTextField extends StatelessWidget {
           borderSide: const BorderSide(width: 1.0),
         ),
         enabledBorder: OutlineInputBorder(
-          borderSide: BorderSide(
-              color: disableBorder
-                  ? Colors.transparent
-                  : const Color(0xFF686868).withOpacity(0.4)),
+          borderSide:
+              BorderSide(color: disableBorder ? ktransparent : klightgreycolor),
           borderRadius: BorderRadius.circular(14.0),
         ),
         disabledBorder: OutlineInputBorder(
-          borderSide: BorderSide(
-              color: disableBorder
-                  ? Colors.transparent
-                  : const Color(0xFF686868).withOpacity(0.4)),
+          borderSide:
+              BorderSide(color: disableBorder ? ktransparent : klightgreycolor),
           borderRadius: BorderRadius.circular(14.0),
         ),
         border: OutlineInputBorder(
-          borderSide: BorderSide(
-              color: disableBorder
-                  ? Colors.transparent
-                  : const Color(0xFF686868).withOpacity(0.4)),
+          borderSide:
+              BorderSide(color: disableBorder ? ktransparent : klightgreycolor),
           borderRadius: BorderRadius.circular(14.0),
         ),
         contentPadding: const EdgeInsets.only(left: 21.0),

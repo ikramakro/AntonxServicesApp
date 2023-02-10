@@ -20,14 +20,14 @@ class CustomSingleRadioButton extends StatelessWidget {
           padding: const EdgeInsets.all(2),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(50),
-            color: Colors.white,
+            color: kwhitecolor,
           ),
           child: Container(
             height: 10,
             width: 10,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(50),
-                color: isSelected ? primaryColor : Colors.transparent),
+                color: isSelected ? kprimaryColor : Colors.transparent),
           ),
         ),
       ),
