@@ -33,6 +33,7 @@ class ApiServices {
     Dio dio = await launchDio();
     final response = await dio
         .get('${config.baseUrl}/$endPoint', queryParameters: params)
+        // ignore: body_might_complete_normally_catch_error
         .catchError((e) {
       debugPrint('Unexpected Error');
     });
@@ -49,6 +50,7 @@ class ApiServices {
     Dio dio = await launchDio();
     final response = await dio
         .post('${config.baseUrl}/$endPoint', data: data)
+        // ignore: body_might_complete_normally_catch_error
         .catchError((e) {
       debugPrint('Unexpected Error');
     });
@@ -65,6 +67,7 @@ class ApiServices {
     Dio dio = await launchDio();
     final response = await dio
         .put('${config.baseUrl}/$endPoint', data: data)
+        // ignore: body_might_complete_normally_catch_error
         .catchError((e) {
       debugPrint('Unexpected Error');
     });
@@ -81,6 +84,7 @@ class ApiServices {
     Dio dio = await launchDio();
     final response = await dio
         .delete('${config.baseUrl}/$endPoint', queryParameters: params)
+        // ignore: body_might_complete_normally_catch_error
         .catchError((e) {
       debugPrint('Unexpected Error');
     });
